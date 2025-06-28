@@ -22,7 +22,7 @@ Ziel war es, ein skalierbares und sicheres Netz zu schaffen, das mehrere **VLANs
 | 10      | Management  | Zugriff für administrative Geräte             |
 | 20      | Mitarbeiter | Produktives Arbeitsnetz für Endgeräte         |
 | 30      | Gäste       | Internetzugang für Besucher (isoliert)        |
-| 40      | VoIP        | Netz für IP-Telefonie, QoS optimiert           |
+| 40      | VoIP        | Netz für IP-Telefonie, QoS optimiert          |
 | 50      | Server      | Zentrale Dienste: DHCP, DNS, Web, File, Mail  |
 
 ---
