@@ -9,7 +9,7 @@ Ziel war es, ein skalierbares und sicheres Netz zu schaffen, das mehrere **VLANs
 
 ## 🧰 Netzwerkstruktur
 
-![Topologie](Screenshots/topologie.png)
+![Topologie](topologie.png)
 
 ### 🔗 Zentrale Komponente
 - **Multilayer-Switch (L3)** zur Verwaltung des Layer-2-Switchings und des Layer-3-Routings  
