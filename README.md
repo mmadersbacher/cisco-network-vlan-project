@@ -1,84 +1,72 @@
-# 🧠 Cisco Netzwerkprojekt – VLAN, DHCP, WLAN, VoIP, L3-Routing
+# Cisco Netzwerkprojekt – VLAN, DHCP, WLAN, VoIP, L3-Routing
 
-## 📌 Projektübersicht
+## Projektübersicht
 
-Dieses Projekt stellt ein vollständiges, logisch segmentiertes Unternehmensnetzwerk dar – aufgebaut in **Cisco Packet Tracer**.  
-Ziel war es, ein skalierbares und sicheres Netz zu schaffen, das mehrere **VLANs**, zentrale Serverdienste, WLAN sowie **Inter-VLAN-Kommunikation über einen Multilayer-Switch** umfasst.
-
----
-
-## 🧰 Netzwerkstruktur
-
-![Topologie](topologie.png)
-
-### 🔗 Zentrale Komponente
-- **Multilayer-Switch (L3)** zur Verwaltung des Layer-2-Switchings und des Layer-3-Routings  
-- Verbindet alle VLANs und regelt kontrollierten Datenfluss
-
-### 🧱 VLAN-Übersicht
-
-| VLAN-ID | Name        | Zweck                                          |
-|---------|-------------|------------------------------------------------|
-| 10      | Management  | Zugriff für administrative Geräte             |
-| 20      | Mitarbeiter | Produktives Arbeitsnetz für Endgeräte         |
-| 30      | Gäste       | Internetzugang für Besucher (isoliert)        |
-| 40      | VoIP        | Netz für IP-Telefonie, QoS optimiert          |
-| 50      | Server      | Zentrale Dienste: DHCP, DNS, Web, File, Mail  |
+Dieses Projekt dokumentiert den Aufbau eines skalierbaren, logisch segmentierten Unternehmensnetzwerks mit Hilfe von Cisco Packet Tracer. Das Netzwerk umfasst mehrere VLANs, zentrale Serverdienste, WLAN und die Inter-VLAN-Kommunikation über einen Multilayer-Switch.
 
 ---
 
-## 🖥️ Infrastruktur & Dienste
+## Netzwerkstruktur
 
-- **DHCP**: Zentrale IP-Zuweisung über den Server im VLAN 50  
-- **DNS & Webserver**: Lokale Namensauflösung und Hosting-Demo  
-- **Access Point**: WLAN für mobiles Arbeiten (Mitarbeiter & Gäste)  
-- **Drucker**: Jeweils in VLAN 20 & 30 integriert  
-- **Trunk-Links**: Zwischen zentralem Switch und allen Edge-Switches  
-- **Access-Ports**: Gerätebindung an dedizierte VLANs  
+**Topologie:** Ein zentraler Multilayer-Switch (Layer 3) steuert sowohl Layer-2 Switching als auch Layer-3 Routing und verbindet alle VLANs.
 
----
+**VLAN-Übersicht:**
 
-## 📸 Screenshots
-
-- `topologie.png` – Netzwerktopologie vollständig  
-- `vlan-config.png` – VLAN-Zuordnung auf den Switchports  
-  
-> Alle Screenshots befinden sich im Ordner `screenshots/`.
+| VLAN-ID | Name        | Zweck                                       |
+|---------|-------------|---------------------------------------------|
+| 10      | Management  | Zugriff für administrative Geräte           |
+| 20      | Mitarbeiter | Produktives Arbeitsnetz für Endgeräte       |
+| 30      | Gäste       | Isolierter Internetzugang für Besucher      |
+| 40      | VoIP        | Netzwerk für IP-Telefonie mit QoS-Optimierung |
+| 50      | Server      | Zentrale Dienste: DHCP, DNS, Web, Datei, Mail |
 
 ---
 
-## 📁 Projektdateien
+## Infrastruktur & Dienste
 
-| Datei                    | Beschreibung                                |
-|--------------------------|---------------------------------------------|
-| `projekt.pkt`            | Cisco Packet Tracer Netzwerkdatei           |
-| `screenshots/`           | Visualisierung der Konfiguration            |
-
----
-
-## 🛠️ Technische Highlights
-
-- VLAN-Isolation mit logischer Netztrennung
-- Gast-WLAN mit VLAN-Trennung vom Unternehmensnetz
+- DHCP-Server zur zentralen IP-Vergabe im Server-VLAN  
+- Lokaler DNS- und Webserver zur Namensauflösung und Hosting  
+- Access Points für WLAN-Zugang, getrennt für Mitarbeiter und Gäste  
+- Drucker in den VLANs für Mitarbeiter und Gäste  
+- Trunk-Links zwischen zentralem Switch und Edge-Switches  
+- Access-Ports, die Endgeräte VLAN-spezifisch zuweisen  
 
 ---
 
-## 🎯 Lernziele & Umsetzung
+## Technische Highlights
 
-- Anwendung von Layer-2- & Layer-3-Konzepten
-- Einsatz logischer Netzwerksegmentierung über VLAN
-- DHCP- und DNS-Konfiguration im Firmennetz
-- Erweiterung um drahtlose Netzwerke und VoIP-Design
-- Einsatz professioneller Dokumentationstechniken
-
----
-
-## 🛡️ Hinweis
-
-Dieses Projekt dient ausschließlich zu Lern- und Demonstrationszwecken.  
-Die Inhalte basieren auf eigenständiger Planung und Umsetzung in einer simulierten Umgebung.
+- VLAN-Isolation mit logischer Netztrennung für Sicherheit  
+- Gast-WLAN mit separater VLAN-Konfiguration  
+- QoS-Konfiguration für VoIP-Traffic zur Optimierung der Sprachqualität  
+- Einsatz von Layer-3-Routing auf Multilayer-Switch für Inter-VLAN-Kommunikation  
 
 ---
 
-## 👣 „Netzwerke baut man nicht für die Gegenwart, sondern für das Wachstum der Zukunft.“
+## Screenshots und Dateien
 
+- `topologie.png` – vollständige Netzwerktopologie  
+- `vlan-config.png` – Beispielkonfiguration der VLAN-Zuweisung auf Switch-Ports  
+- Projektdatei: `projekt.pkt` (Cisco Packet Tracer Datei)  
+- Screenshots befinden sich im Verzeichnis `screenshots/`
+
+---
+
+## Lernziele und Umsetzung
+
+- Praktische Anwendung von Layer-2- und Layer-3-Netzwerkkonzepten  
+- Segmentierung und Netzwerksicherheit durch VLANs  
+- Konfiguration zentraler Dienste wie DHCP und DNS  
+- Einbindung von drahtlosem Netzwerk und VoIP-Komponenten  
+- Professionelle Dokumentation und Visualisierung der Netzwerkarchitektur  
+
+---
+
+## Haftungsausschluss
+
+Das Projekt dient ausschließlich Lern- und Demonstrationszwecken. Es basiert auf eigenständiger Planung und Umsetzung in einer simulierten Umgebung.
+
+---
+
+## Autor
+
+Mario Madersbacher
