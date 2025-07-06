@@ -63,7 +63,7 @@ Dieses Projekt dokumentiert den Aufbau eines skalierbaren, logisch segmentierten
 
 ## Haftungsausschluss
 
-Das Projekt dient ausschließlich Lern- und Demonstrationszwecken. Es basiert auf eigenständiger Planung und Umsetzung in einer simulierten Umgebung (Packet Tracer).
+Das Projekt dient ausschließlich Lern- und Demonstrationszwecken. Es basiert auf eigenständiger Planung und Umsetzung in einer simulierten Umgebung.
 
 ---
 
